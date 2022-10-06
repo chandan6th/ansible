@@ -4,4 +4,4 @@
   become: true
   tasks:
   - name: download packege from internet in linux server
-    wget: /home/ec2-user/http://nginx.org/download/nginx-0.9.0.tar.gz 
+    shell: wget /home/ec2-user/http://nginx.org/download/nginx-0.9.0.tar.gz 
