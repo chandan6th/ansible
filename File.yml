@@ -1,0 +1,9 @@
+---
+- hosts: tmp
+  remote_user: root       # user which use to ssh client server
+  become: true            # as a sudo user
+  tasks: 
+  - name: create a file in client server
+    file:
+      path: "/home/ec2-user"
+      state: touch
