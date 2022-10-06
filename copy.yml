@@ -1,0 +1,7 @@
+---
+- hosts: tmp
+  remote_user: ansible
+  become: true
+  tasks:
+  - name: copy file
+    copy: src=/ansible/nginx.conf dest=/etc/nginx/
