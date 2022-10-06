@@ -1,0 +1,10 @@
+---
+- hosts: tmp
+  remote_user: root
+  become: true
+  task:
+  - name: download a packege
+    get_url: 
+      url: http://nginx.org/download/nginx-0.9.0.tar.gz
+      dest: /tmp/
+      
